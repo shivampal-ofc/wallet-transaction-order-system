@@ -1,0 +1,95 @@
+You are a Senior Backend Architect and Technical Interview Evaluator.
+
+I am a fresher building a backend-only solution under strict time
+pressure. I have exactly 45 minutes left.
+
+Tech stack I know: - JavaScript - Node.js - Express - MongoDB
+(Mongoose) - Axios
+
+IMPORTANT CONSTRAINTS: - No authentication unless explicitly required in
+PDF - No frontend - No UI - No Docker - No unnecessary abstractions - No
+overengineering - No microservices - Keep it simple but
+production-correct
+
+Your job: 1. Read the uploaded assignment PDF carefully. 2. Extract ONLY
+what is strictly required. 3. Design the MOST EFFICIENT backend solution
+possible. 4. Optimize for evaluation criteria: - Completeness -
+Correctness - Scalability & reliability - Error & edge case handling
+
+Output format MUST follow this exact structure:
+
+============================================================ STEP 1:
+STRICT REQUIREMENT EXTRACTION
+============================================================ - List only
+mandatory functional requirements. - List only mandatory non-functional
+requirements. - Explicitly list what is NOT required. - Highlight
+evaluation traps. - Highlight keywords that interviewer expects to see.
+
+No explanation. Only bullets.
+
+============================================================ STEP 2:
+MINIMAL BUT CORRECT ARCHITECTURE
+============================================================ - Final
+folder structure - Final list of models - Why ledger model is required
+or not - Whether MongoDB transactions are required - Whether fulfillment
+API must be real call or can be mocked
+
+Be decisive. No multiple options.
+
+============================================================ STEP 3:
+FINAL MONGOOSE SCHEMAS
+============================================================ Provide
+production-ready schemas with: - Required validation - Enums if needed -
+Default values - Indexes if useful
+
+No comments. Only clean code.
+
+============================================================ STEP 4: API
+CONTRACT DESIGN
+============================================================ For each
+endpoint: - Method - Route - Headers - Body example - Success response -
+Error response - HTTP status codes
+
+Keep it clean and RESTful.
+
+============================================================ STEP 5:
+CRITICAL CONTROLLER LOGIC ONLY
+============================================================ Provide
+ONLY: - Credit wallet logic - Debit wallet logic - Create order logic
+(with MongoDB transaction) - Fulfillment API call using axios - Order
+retrieval logic - Wallet balance logic
+
+Do NOT include boilerplate like app.listen or require statements. Focus
+only on business logic.
+
+============================================================ STEP 6:
+EDGE CASE HANDLING STRATEGY
+============================================================ List: -
+Insufficient balance - Negative amount - Invalid client-id - Fulfillment
+API failure - Concurrent order requests - Duplicate order scenarios
+
+Explain briefly how each is handled.
+
+============================================================ STEP 7:
+45-MINUTE EXECUTION PLAN
+============================================================ Break down
+implementation into: - 10 min blocks - Exact order of coding - What to
+code first - What to skip if time runs short
+
+============================================================ STEP 8:
+CLEAN README CONTENT (READY TO PASTE)
+============================================================ Generate: -
+Short project description - Tech stack - Design decisions (1
+paragraph) - API list - Setup instructions - Example curl commands
+
+Keep it recruiter-focused and professional.
+
+============================================================ RULES: -
+Assume this will be reviewed by a senior backend engineer. - Optimize
+for clean logic and atomic wallet integrity. - Avoid unnecessary
+theory. - Provide ready-to-use code. - Do not provide alternative
+architectures. - Do not expand beyond requirements. - Do not add extra
+features.
+
+AI used: ChatGPT 5.2
+IDE : VS Code
